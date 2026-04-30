@@ -14,8 +14,12 @@ const groups = [
     skills: ["Node.js", "PostgreSQL", "Supabase", "REST", "GraphQL"],
   },
   {
+    title: "Data Analyst",
+    skills: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "MYSQL", "Power BI", "Tableau", "MS Excel",],
+  },
+  {
     title: "Design",
-    skills: ["Figma", "Spline", "After Effects", "Cinema 4D"],
+    skills: ["Figma", "Canva", "Spline", "After Effects", "Cinema 4D"],
   },
 ];
 

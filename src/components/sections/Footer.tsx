@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, ArrowUpRight } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowUpRight, Instagram } from "lucide-react";
 
 const socials = [
   { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
   { icon: Github, label: "GitHub", href: "https://github.com" },
   { icon: Mail, label: "Email", href: "mailto:hello@aether.studio" },
+  { icon: Instagram, label: "Instagram", href: "https://instagram.com" },
 ];
 
 export const Footer = () => {
@@ -24,7 +25,7 @@ export const Footer = () => {
 
           <div className="relative">
             <div className="font-mono text-xs tracking-[0.3em] text-primary mb-4">/ 07 — CONNECT</div>
-            <h2 className="font-display text-4xl md:text-7xl font-semibold leading-[0.95] mb-10 max-w-3xl">
+            <h2 className="font-display text-4xl md:text-5xl font-semibold leading-[0.95] mb-10 max-w-4xl">
               Let's build something <span className="gradient-text">extraordinary.</span>
             </h2>
 
@@ -32,7 +33,7 @@ export const Footer = () => {
               href="mailto:hello@aether.studio"
               className="inline-flex items-center gap-3 px-7 py-4 rounded-2xl bg-primary text-primary-foreground font-medium hover:shadow-glow transition-all duration-500 group"
             >
-              hello@aether.studio
+              arvindyadav7738600@gmail.com
               <ArrowUpRight className="w-5 h-5 group-hover:rotate-45 transition-transform duration-500" />
             </a>
 
@@ -59,7 +60,7 @@ export const Footer = () => {
 
         <div className="flex flex-wrap items-center justify-between gap-3 mt-10 px-2">
           <div className="font-mono text-xs text-muted-foreground">
-            © {new Date().getFullYear()} AETHER · ALL RIGHTS RESERVED
+            © {new Date().getFullYear()} ARVIND K.  ALL RIGHTS RESERVED
           </div>
           <div className="font-mono text-xs text-muted-foreground flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />

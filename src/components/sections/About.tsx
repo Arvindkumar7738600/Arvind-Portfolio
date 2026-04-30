@@ -14,8 +14,8 @@ export const About = () => {
           className="max-w-5xl mx-auto"
         >
           <div className="font-mono text-xs tracking-[0.3em] text-primary mb-4">/ 01 — ABOUT</div>
-          <h2 className="font-display text-4xl md:text-6xl font-semibold mb-16 max-w-3xl">
-            Minimalist. <span className="text-muted-foreground">Curious.</span> <span className="gradient-text">Builder.</span>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold mb-16 max-w-6xl">
+            Data Scientist. <span className="text-muted-foreground">Developer.</span> <span className="gradient-text">Startup Builder.</span>
           </h2>
 
           <div className="grid md:grid-cols-[280px_1fr] gap-10 items-center">
@@ -24,21 +24,23 @@ export const About = () => {
                 <CursorScene />
               </Suspense>
               <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-card/90 to-transparent">
-                <div className="font-mono text-[10px] tracking-widest text-primary">SYS://AETHER.IDENTITY</div>
+                <div className="font-mono text-[10px] tracking-widest text-primary">SYS://ARVIND KUMAR.IDENTITY</div>
               </div>
             </div>
 
             <div className="space-y-6">
               <p className="text-lg md:text-xl text-foreground/90 leading-relaxed">
-                I design and build digital products that blend purposeful interaction
-                with immersive 3D worlds. Driven by typography, motion, and the quiet
-                beauty of well-crafted code.
+                Hi, <span className="text-primary">I’m Arvind Kumar — a Data Science student at IIT Madras</span> with a strong interest in building real-world solutions using technology.
+                Mujhe web development, Flutter apps, aur data-driven problem solving.
+
+                I enjoy turning ideas into practical products, like my startup project <span className="text-primary">KisanSevaPlus</span>.
+                  Currently, I’m working on improving my skills in Data Analysis, Software Development, and building scalable applications.
               </p>
               <div className="grid grid-cols-3 gap-4 pt-6">
                 {[
-                  { value: "5+", label: "Years building" },
-                  { value: "30+", label: "Shipped projects" },
-                  { value: "12", label: "Awards & wins" },
+                  { value: "1+", label: "Years building" },
+                  { value: "5+", label: "Shipped projects" },
+                  { value: "2", label: "Awards & wins" },
                 ].map((stat) => (
                   <div key={stat.label} className="glass rounded-2xl p-4">
                     <div className="font-display text-3xl font-semibold gradient-text">{stat.value}</div>
