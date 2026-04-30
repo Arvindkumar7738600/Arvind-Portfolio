@@ -33,7 +33,7 @@ const PortraitCard = () => {
     <Float speed={1.6} rotationIntensity={0.25} floatIntensity={0.5}>
       <group ref={groupRef}>
         {/* Glowing back ring */}
-        <mesh ref={ringRef} position={[0, 0, -0.25]}>
+        <mesh ref={ringRef} position={[0, 0, -0.35]}>
           <torusGeometry args={[1.85, 0.025, 16, 120]} />
           <meshBasicMaterial color="#22d3ee" transparent opacity={0.7} />
         </mesh>
@@ -49,15 +49,15 @@ const PortraitCard = () => {
           <circleGeometry args={[1.5, 96]} />
           <meshStandardMaterial
             map={texture}
-            roughness={0.35}
+            roughness={0.55}
             metalness={0.05}
             emissive="#0aa8c4"
-            emissiveIntensity={0.04}
+            emissiveIntensity={0.03}
           />
         </mesh>
 
         {/* Subtle wireframe halo */}
-        <mesh scale={1.08}>
+        <mesh scale={0.08}>
           <icosahedronGeometry args={[1.7, 1]} />
           <meshBasicMaterial color="#7df9ff" wireframe transparent opacity={0.08} />
         </mesh>

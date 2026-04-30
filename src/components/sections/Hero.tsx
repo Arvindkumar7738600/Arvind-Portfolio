@@ -39,7 +39,7 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-muted-foreground text-lg max-w-md mb-10 leading-relaxed"
           >
-            I’m a Data Science student at IIT Madras, passionate about building real-world solutions like <span className="text-primary">KisanSevaPlus</span> to empower farmers through technology.
+            Building scalable tech and data-driven solutions that solve real-world problems.
           </motion.p>
 
           <motion.div
@@ -66,8 +66,8 @@ export const Hero = () => {
 
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
+          animate={{ opacity: 1, scale: 1}}
+          transition={{ duration: 0.8, delay: 0.5 }}
           className="relative h-[420px] lg:h-[560px]"
         >
           <Suspense fallback={<div className="w-full h-full rounded-3xl glass animate-pulse" />}>
@@ -85,7 +85,7 @@ export const Hero = () => {
         transition={{ delay: 1.5 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
-        <span className="font-mono text-[10px] tracking-[0.3em] text-muted-foreground">SCROLL</span>
+        <span className="font-mono text-[10px] tracking-[0.3em] text-muted-foreground">SCROLL DOWN</span>
         <div className="w-[1px] h-10 bg-gradient-to-b from-primary to-transparent animate-pulse" />
       </motion.div>
     </section>

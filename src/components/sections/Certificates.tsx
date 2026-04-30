@@ -90,7 +90,7 @@ export const Certificates = () => {
                 <p className="text-muted-foreground mb-8">Issued by {certs[active].issuer}</p>
                 <div className="aspect-[4/3] rounded-2xl border border-border/60 grid-bg flex items-center justify-center">
                   <div className="text-center">
-                    <div className="font-display text-4xl gradient-text font-semibold mb-2">Aether</div>
+                    <div className="font-display text-4xl gradient-text font-semibold mb-2">Arvind k.</div>
                     <div className="font-mono text-xs tracking-widest text-muted-foreground">VERIFIED · {certs[active].issuer.toUpperCase()}</div>
                   </div>
                 </div>

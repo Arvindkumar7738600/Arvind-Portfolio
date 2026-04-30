@@ -3,20 +3,20 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Nebula UI",
-    description: "An immersive component library combining glassmorphism, motion, and WebGL backdrops for modern apps.",
+    title: "KisanSevaPlus",
+    description: "Built a platform to help farmers rent tractors, hire skilled labor, and access agricultural equipment — reducing effort from days to hours.",
     tech: ["React", "Three.js", "Tailwind"],
     accent: "from-primary/30 to-transparent",
-    live: "#",
-    github: "#",
+    live: "https://kisansevaplus.vercel.app",
+    github: "https://github.com/Arvindkumar7738600",
   },
   {
-    title: "Lumen Studio",
-    description: "Realtime 3D portfolio configurator with shader-driven materials and interactive scene editing.",
-    tech: ["R3F", "GLSL", "TypeScript"],
+    title: "Jharkhand Tourism",
+    description: "Discover the natural beauty and cultural heritage of Jharkhand's most captivating locations & Choose from our premium fleet of well-maintained vehicles for a comfortable and memorable journey across Jharkhand.",
+    tech: ["Html", "Css", "TailwindCSS", "React", "TypeScript"],
     accent: "from-accent/30 to-transparent",
-    live: "#",
-    github: "#",
+    live: "https://jharkhand-tourism-delta.vercel.app",
+    github: "https://github.com/Arvindkumar7738600",
   },
   {
     title: "Atlas Maps",
@@ -42,7 +42,7 @@ export const Projects = () => {
           <div>
             <div className="font-mono text-xs tracking-[0.3em] text-primary mb-4">/ 04 — SELECTED WORK</div>
             <h2 className="font-display text-4xl md:text-6xl font-semibold">
-              Projects, <span className="gradient-text">crafted slow.</span>
+              Start-Up , <span className="gradient-text">Projects.</span>
             </h2>
           </div>
           <p className="text-muted-foreground max-w-sm">

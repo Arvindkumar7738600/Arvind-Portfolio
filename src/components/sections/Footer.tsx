@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, ArrowUpRight, Instagram } from "lucide-react";
 
 const socials = [
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-  { icon: Github, label: "GitHub", href: "https://github.com" },
-  { icon: Mail, label: "Email", href: "mailto:hello@aether.studio" },
-  { icon: Instagram, label: "Instagram", href: "https://instagram.com" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/arvind-k-060656316/" },
+  { icon: Github, label: "GitHub", href: "https://github.com/Arvindkumar7738600" },
+  { icon: Mail, label: "Email", href: "mailto:arvindyadav7738600@gmail.com" },
+  { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/cdefghijklm_.n0/" },
 ];
 
 export const Footer = () => {
@@ -30,7 +30,7 @@ export const Footer = () => {
             </h2>
 
             <a
-              href="mailto:hello@aether.studio"
+              href="mailto:arvindyadav7738600@gmail.com"
               className="inline-flex items-center gap-3 px-7 py-4 rounded-2xl bg-primary text-primary-foreground font-medium hover:shadow-glow transition-all duration-500 group"
             >
               arvindyadav7738600@gmail.com
@@ -64,7 +64,7 @@ export const Footer = () => {
           </div>
           <div className="font-mono text-xs text-muted-foreground flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-            CRAFTED WITH MOTION & CODE
+            CRAFTED WITH ARVIND
           </div>
         </div>
       </div>

@@ -30,11 +30,8 @@ export const About = () => {
 
             <div className="space-y-6">
               <p className="text-lg md:text-xl text-foreground/90 leading-relaxed">
-                Hi, <span className="text-primary">I’m Arvind Kumar — a Data Science student at IIT Madras</span> with a strong interest in building real-world solutions using technology.
-                Mujhe web development, Flutter apps, aur data-driven problem solving.
-
-                I enjoy turning ideas into practical products, like my startup project <span className="text-primary">KisanSevaPlus</span>.
-                  Currently, I’m working on improving my skills in Data Analysis, Software Development, and building scalable applications.
+                Hi,<span className="text-primary text-yellow-400"> I’m Arvind Kumar — a Data Science student at IIT Madras</span> with a strong interest in building real-world solutions using technology. I specialize in web development, Flutter apps, and data-driven problem solving.
+                I enjoy transforming ideas into practical products, like my startup project KisanSevaPlus, which focuses on empowering farmers through technology. Currently, I’m focused on improving my skills in Data Analysis, Software Development, and building scalable applications.
               </p>
               <div className="grid grid-cols-3 gap-4 pt-6">
                 {[

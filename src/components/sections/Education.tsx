@@ -11,14 +11,14 @@ const items = [
   {
     year: "2024",
     degree: "12th Grade Science Stream",
-    institution: "Delhi Public School",
-    detail: "94.2% — Physics, Chemistry, Math.",
+    institution: "DORANDA COLLEGE RANCHI",
+    detail: "76.2% — Physics, Chemistry, Math.",
   },
   {
-    year: "2018",
+    year: "2022",
     degree: "10th Grade",
-    institution: "Delhi Public School",
-    detail: "97.4% — Foundation studies.",
+    institution: "UPGRADED HIGH SCHOOL",
+    detail: "83.4% — Foundation studies.",
   },
 ];
 
