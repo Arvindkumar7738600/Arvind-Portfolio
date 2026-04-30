@@ -17,7 +17,7 @@ export const Hero = () => {
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass mb-6"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-            <span className="font-mono text-xs text-muted-foreground">AVAILABLE FOR FREELANCE</span>
+            <span className="font-mono text-xs text-muted-foreground">AVAILABLE FOR FREELANCE & INTERNSHIP</span>
           </motion.div>
 
           <motion.h1
@@ -28,8 +28,8 @@ export const Hero = () => {
           >
             Hi, I'm <span className="gradient-text">Arvind</span>
             <br />
-            <span className="text-muted-foreground text-3xl md:text-5xl lg:text-6xl font-normal">
-              Creative Developer
+            <span className="text-muted-foreground text-4xl md:text-3xl lg:text-4xl font-normal">
+            Full Stack Developer | Data Enthusiast
             </span>
           </motion.h1>
 
@@ -39,8 +39,7 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-muted-foreground text-lg max-w-md mb-10 leading-relaxed"
           >
-            Crafting immersive digital experiences at the intersection of design,
-            code, and three-dimensional motion.
+            I’m a Data Science student at IIT Madras, passionate about building real-world solutions like <span className="text-primary">KisanSevaPlus</span> to empower farmers through technology.
           </motion.p>
 
           <motion.div

@@ -3,13 +3,13 @@ import { useRef, MouseEvent } from "react";
 
 const items = [
   {
-    year: "2024",
-    degree: "B.Tech Computer Science",
-    institution: "IIT Delhi",
-    detail: "Specialization in Computer Graphics and AI.",
+    year: "2025",
+    degree: "B.Sc Data Science & Applications",
+    institution: "IIT MADRAS",
+    detail: "Specialization in Data Analysis, Data Science , AI & ML",
   },
   {
-    year: "2020",
+    year: "2024",
     degree: "12th Grade Science Stream",
     institution: "Delhi Public School",
     detail: "94.2% — Physics, Chemistry, Math.",
