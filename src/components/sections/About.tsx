@@ -24,7 +24,7 @@ export const About = () => {
                 <CursorScene />
               </Suspense>
               <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-card/90 to-transparent">
-                <div className="font-mono text-[10px] tracking-widest text-primary">SYS://ARVIND KUMAR.IDENTITY</div>
+                <div className="font-mono text-[10px] tracking-widest text-primary">SYS://ARVIND K.IDENTITY</div>
               </div>
             </div>
 
