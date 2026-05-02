@@ -19,12 +19,12 @@ const projects = [
     github: "https://github.com/Arvindkumar7738600",
   },
   {
-    title: "Atlas Maps",
+    title: "Mohit Dental Care",
     description: "Vector cartography platform with elegant typography and quiet, performant interactions at scale.",
     tech: ["Next.js", "Mapbox", "PostgreSQL"],
     accent: "from-primary/30 to-accent/20",
-    live: "#",
-    github: "#",
+    live: "https://mohitdentalcare.vercel.app",
+    github: "https://github.com/Arvindkumar7738600",
   },
 ];
 
