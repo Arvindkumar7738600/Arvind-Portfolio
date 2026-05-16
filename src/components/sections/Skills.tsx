@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const groups = [
   {
     title: "Frontend",
-    skills: ["React", "TypeScript", "Next.js", "TailwindCSS", "Framer Motion"],
+    skills: ["React.js", "TypeScript", "Next.js", "TailwindCSS", "Framer Motion"],
   },
   {
     title: "3D & Motion",
@@ -36,7 +36,7 @@ export const Skills = () => {
         >
           <div className="font-mono text-xs tracking-[0.3em] text-primary mb-4">/ 03 — SKILLS</div>
           <h2 className="font-display text-4xl md:text-6xl font-semibold">
-            The <span className="gradient-text">tools</span> I think with.
+            Tech Stack
           </h2>
         </motion.div>
 

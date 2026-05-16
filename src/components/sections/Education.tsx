@@ -5,19 +5,19 @@ const items = [
   {
     year: "2025",
     degree: "B.Sc Data Science & Applications",
-    institution: "IIT MADRAS",
+    institution: "Indian Institute of Technology Madras",
     detail: "Specialization in Data Analysis, Data Science , AI & ML",
   },
   {
     year: "2024",
     degree: "12th Grade Science Stream",
-    institution: "DORANDA COLLEGE RANCHI",
+    institution: "Doranda College, Ranchi",
     detail: "76.2% — Physics, Chemistry, Math.",
   },
   {
     year: "2022",
     degree: "10th Grade",
-    institution: "UPGRADED HIGH SCHOOL",
+    institution: "Upgrade School, Hazaribagh",
     detail: "83.4% — Foundation studies.",
   },
 ];
@@ -52,7 +52,7 @@ const TiltCard = ({ children }: { children: React.ReactNode }) => {
 
 const TimelineCard = ({ item }: { item: (typeof items)[number] }) => (
   <TiltCard>
-    <div className="relative glass glass-hover rounded-3xl p-6 md:p-8 overflow-hidden">
+    <div className="relative glass glass-hover rounded-3xl p-6 md:p-4 overflow-hidden">
       <span
         aria-hidden
         className="pointer-events-none absolute -top-2 right-4 font-display font-bold text-foreground/[0.06] text-7xl md:text-8xl leading-none select-none"
@@ -69,7 +69,7 @@ const TimelineCard = ({ item }: { item: (typeof items)[number] }) => (
         </div>
         <h3 className="font-display text-xl md:text-2xl font-semibold mb-1">{item.degree}</h3>
         <p className="text-muted-foreground text-sm mb-4">{item.institution}</p>
-        <p className="text-foreground/70 text-sm">{item.detail}</p>
+        <p className="text-yellow-400 text-sm">{item.detail}</p>
       </div>
     </div>
   </TiltCard>

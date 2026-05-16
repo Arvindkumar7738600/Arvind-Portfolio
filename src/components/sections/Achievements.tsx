@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Trophy, Medal, Award, Star } from "lucide-react";
 
 const items = [
-  { icon: Trophy, title: "Awwwards SOTD", detail: "Site of the Day — 2024", color: "text-accent" },
+  { icon: Trophy, title: "Smart India Hackathon - Runner up", detail: "National finalist among top 30 teams solving real govt. problem statements.", color: "text-accent" },
   { icon: Medal, title: "CSSDA Winner", detail: "Innovation in 3D Web", color: "text-primary" },
-  { icon: Award, title: "Hackathon Champion", detail: "GlobalHack '23 — 1st Place", color: "text-accent" },
-  { icon: Star, title: "Open Source 1k★", detail: "Three.js helper library", color: "text-primary" },
+  { icon: Award, title: "Hackathon", detail: "Hack2skill'25 — 1st Place", color: "text-accent" },
+  { icon: Star, title: " Open Source Contributor  Gssoc 2026", detail: "Active contributor to React, Vite, and developer tooling ecosystems.", color: "text-primary" },
 ];
 
 export const Achievements = () => {
@@ -21,7 +21,7 @@ export const Achievements = () => {
         >
           <div className="font-mono text-xs tracking-[0.3em] text-primary mb-4">/ 05 — ACHIEVEMENTS</div>
           <h2 className="font-display text-4xl md:text-6xl font-semibold">
-            Quiet wins, <span className="gradient-text">loud impact.</span>
+            Milestones <span className="gradient-text">&</span> Honours
           </h2>
         </motion.div>
 
