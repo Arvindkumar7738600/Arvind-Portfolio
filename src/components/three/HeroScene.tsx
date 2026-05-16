@@ -1,66 +1,76 @@
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { Float, Stars } from "@react-three/drei";
-import { Suspense, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { Float } from "@react-three/drei";
+import { Suspense, useMemo, useRef } from "react";
 import * as THREE from "three";
-import profileImg from "@/assets/profile.jpeg";
 
-const PortraitCard = () => {
+// Neural network / data-science inspired wireframe: nodes connected by lines
+// arranged on a sphere — evokes a computer-engineer / data-scientist graph.
+const NeuralGraph = () => {
   const groupRef = useRef<THREE.Group>(null);
-  const ringRef = useRef<THREE.Mesh>(null);
-  const texture = useLoader(THREE.TextureLoader, profileImg);
-  texture.anisotropy = 8;
+
+  const { nodes, lineGeometry } = useMemo(() => {
+    const COUNT = 220;
+    const RADIUS = 2.1;
+    const pts: THREE.Vector3[] = [];
+    // Fibonacci sphere distribution
+    for (let i = 0; i < COUNT; i++) {
+      const phi = Math.acos(1 - (2 * (i + 0.5)) / COUNT);
+      const theta = Math.PI * (1 + Math.sqrt(5)) * i;
+      pts.push(
+        new THREE.Vector3(
+          RADIUS * Math.sin(phi) * Math.cos(theta),
+          RADIUS * Math.sin(phi) * Math.sin(theta),
+          RADIUS * Math.cos(phi)
+        )
+      );
+    }
+
+    // connect each node to its nearest neighbours
+    const positions: number[] = [];
+    const K = 3;
+    for (let i = 0; i < pts.length; i++) {
+      const dists = pts
+        .map((p, j) => ({ j, d: pts[i].distanceTo(p) }))
+        .filter((o) => o.j !== i)
+        .sort((a, b) => a.d - b.d)
+        .slice(0, K);
+      for (const { j } of dists) {
+        positions.push(pts[i].x, pts[i].y, pts[i].z, pts[j].x, pts[j].y, pts[j].z);
+      }
+    }
+    const geom = new THREE.BufferGeometry();
+    geom.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+
+    const nodePositions = new Float32Array(pts.length * 3);
+    pts.forEach((p, i) => {
+      nodePositions[i * 3] = p.x;
+      nodePositions[i * 3 + 1] = p.y;
+      nodePositions[i * 3 + 2] = p.z;
+    });
+
+    return { nodes: nodePositions, lineGeometry: geom };
+  }, []);
 
   useFrame(({ clock, mouse }) => {
+    if (!groupRef.current) return;
     const t = clock.getElapsedTime();
-    if (groupRef.current) {
-      groupRef.current.rotation.y = THREE.MathUtils.lerp(
-        groupRef.current.rotation.y,
-        mouse.x * 0.5,
-        0.05
-      );
-      groupRef.current.rotation.x = THREE.MathUtils.lerp(
-        groupRef.current.rotation.x,
-        -mouse.y * 0.3,
-        0.05
-      );
-    }
-    if (ringRef.current) {
-      ringRef.current.rotation.z = t * 0.3;
-    }
+    groupRef.current.rotation.y = t * 0.15 + mouse.x * 0.4;
+    groupRef.current.rotation.x = Math.sin(t * 0.1) * 0.2 + mouse.y * 0.3;
   });
 
   return (
-    <Float speed={1.6} rotationIntensity={0.25} floatIntensity={0.5}>
+    <Float speed={1.2} rotationIntensity={0.2} floatIntensity={0.4}>
       <group ref={groupRef}>
-        {/* Glowing back ring */}
-        <mesh ref={ringRef} position={[0, 0, -0.35]}>
-          <torusGeometry args={[1.85, 0.025, 16, 120]} />
-          <meshBasicMaterial color="#22d3ee" transparent opacity={0.7} />
-        </mesh>
-
-        {/* Outer cyan frame */}
-        <mesh position={[0, 0, 0.05]}>
-          <ringGeometry args={[1.55, 1.62, 64]} />
-          <meshBasicMaterial color="#7df9ff" transparent opacity={0.4} side={THREE.DoubleSide} />
-        </mesh>
-
-        {/* Portrait disc */}
-        <mesh>
-          <circleGeometry args={[1.5, 96]} />
-          <meshStandardMaterial
-            map={texture}
-            roughness={0.55}
-            metalness={0.05}
-            emissive="#0aa8c4"
-            emissiveIntensity={0.03}
-          />
-        </mesh>
-
-        {/* Subtle wireframe halo */}
-        <mesh scale={0.08}>
-          <icosahedronGeometry args={[1.7, 1]} />
-          <meshBasicMaterial color="#7df9ff" wireframe transparent opacity={0.08} />
-        </mesh>
+        <lineSegments>
+          <primitive object={lineGeometry} attach="geometry" />
+          <lineBasicMaterial color="#22d3ee" transparent opacity={0.55} />
+        </lineSegments>
+        <points>
+          <bufferGeometry>
+            <bufferAttribute attach="attributes-position" args={[nodes, 3]} />
+          </bufferGeometry>
+          <pointsMaterial color="#7df9ff" size={0.05} sizeAttenuation transparent opacity={0.9} />
+        </points>
       </group>
     </Float>
   );
@@ -68,14 +78,11 @@ const PortraitCard = () => {
 
 export const HeroScene = () => {
   return (
-    <Canvas camera={{ position: [0, 0, 4.5], fov: 45 }} dpr={[1, 2]}>
+    <Canvas camera={{ position: [0, 0, 6], fov: 50 }} dpr={[1, 2]}>
       <Suspense fallback={null}>
-        <ambientLight intensity={0.6} />
-        <directionalLight position={[5, 5, 5]} intensity={1.2} color="#ffffff" />
-        <pointLight position={[-5, -3, -2]} intensity={1.4} color="#22d3ee" />
-        <pointLight position={[3, -2, 4]} intensity={0.6} color="#fbbf24" />
-        <PortraitCard />
-        <Stars radius={50} depth={40} count={1500} factor={4} saturation={0} fade speed={0.6} />
+        <ambientLight intensity={0.5} />
+        <pointLight position={[5, 5, 5]} intensity={1} color="#22d3ee" />
+        <NeuralGraph />
       </Suspense>
     </Canvas>
   );
