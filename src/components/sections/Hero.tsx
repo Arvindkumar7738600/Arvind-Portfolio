@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Suspense } from "react";
 import { HeroScene } from "../three/HeroScene";
 
-const ROLES = ["Full-Stack Developer", "Data Scientist", "AI Engineer"];
+const ROLES = ["Data Scientist","Full-Stack Developer", "AI Engineer"];
 
 export const Hero = () => {
   return (
@@ -41,9 +41,9 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="font-display font-semibold leading-[0.95] tracking-tight text-[3.25rem] sm:text-7xl lg:text-[8rem] gradient-text text-glow"
-        >
-          Arvind Kumar
+           className="font-hero font-bold text-7xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-b from-white via-cyan-100 to-cyan-400 tracking-tight filter drop-shadow-[0_0_30px_rgba(34,211,238,0.4)] transition-all duration-500 hover:scale-105">
+  Arvind Kumar
+
         </motion.h1>
 
         <motion.div

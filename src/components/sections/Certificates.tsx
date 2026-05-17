@@ -3,11 +3,11 @@ import { useState } from "react";
 import { X, FileBadge } from "lucide-react";
 
 const certs = [
-  { title: "Advanced React Patterns", issuer: "Frontend Masters", year: "2024", color: "from-primary/20 to-transparent" },
-  { title: "Three.js Journey", issuer: "Bruno Simon", year: "2024", color: "from-accent/20 to-transparent" },
-  { title: "Creative Coding", issuer: "School of Motion", year: "2023", color: "from-primary/20 to-accent/10" },
-  { title: "GLSL Shaders", issuer: "The Book of Shaders", year: "2023", color: "from-accent/20 to-primary/10" },
-  { title: "Design Systems", issuer: "Interaction Design Foundation", year: "2022", color: "from-primary/20 to-transparent" },
+  { title: "Python for Data Science", issuer: "Cognitive Class", year: "Issued Oct 2025", color: "from-primary/20 to-transparent" },
+  { title: "Gemini Certified Educator", issuer: "Google", year: "Issued Oct 2025", color: "from-accent/20 to-transparent" },
+  { title: "Foundation level in Data science", issuer: "Indian Institute of Technology, Madras", year: "Issued Dec 2025", color: "from-primary/20 to-accent/10" },
+  { title: "Microsoft Excel with A.I Masterclass", issuer: "SkillCourse", year: "Issued Feb 2026", color: "from-accent/20 to-primary/10" },
+  { title: "Python Coding Challenge 4.0", issuer: "ITM Paradox'25", year: "2025", color: "from-primary/20 to-transparent" },
   { title: "WebGL Fundamentals", issuer: "Udacity", year: "2022", color: "from-accent/20 to-transparent" },
 ];
 
