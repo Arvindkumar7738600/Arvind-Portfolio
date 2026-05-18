@@ -29,7 +29,7 @@ const certs = [
     issuer: "Indian Institute of Technology, Patna", 
     year: "Issued jan 2026", 
     color: "from-accent/20 to-transparent",
-    fileUrl: "/certificates/iitp-droidrun.pdf"
+    fileUrl: "/src/certificate/b9b2dbb5-ce3a-4975-8e23-153f0a7da48b.jpg"
   },
   { 
     title: "Microsoft Excel with A.I Masterclass", 
@@ -57,7 +57,7 @@ const certs = [
     issuer: "Google", 
     year: "Issued Jan 2026", 
     color: "from-accent/20 to-transparent",
-    fileUrl: "/certificates/gdg-ranchi.pdf"
+    fileUrl: "/src/certificate/Certificate_SC-94C7B5DDC7.png"
   },
   { 
     title: "Chess Championship", 
