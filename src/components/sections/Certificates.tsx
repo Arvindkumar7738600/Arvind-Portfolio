@@ -8,63 +8,63 @@ const certs = [
     issuer: "Cognitive Class", 
     year: "Issued Oct 2025", 
     color: "from-primary/20 to-transparent",
-    fileUrl: "/src/certificate/1770091044089.jpeg" // ← Apni file ka path yaha dale (PDF ya Image)
+    fileUrl: "/public/certificate/1770091044089.jpeg" // ← Apni file ka path yaha dale (PDF ya Image)
   },
   { 
     title: "Gemini Certified Educator", 
     issuer: "Google", 
     year: "Issued Oct 2025", 
     color: "from-accent/20 to-transparent",
-    fileUrl: "/src/certificate/1770090902323.jpeg"
+    fileUrl: "/public/certificate/1770090902323.jpeg"
   },
   { 
     title: "Foundation level in Data science", 
     issuer: "Indian Institute of Technology, Madras", 
     year: "Issued Dec 2025", 
     color: "from-primary/20 to-accent/10",
-    fileUrl: "/src/certificate/e6aec137af14b734e2c4423f329bc478598d7372f43efe7359edae12188e0da5-2.pdf"
+    fileUrl: "/public/certificate/e6aec137af14b734e2c4423f329bc478598d7372f43efe7359edae12188e0da5-2.pdf"
   },
   { 
     title: "Droidrun DecSprint 2026", 
     issuer: "Indian Institute of Technology, Patna", 
     year: "Issued jan 2026", 
     color: "from-accent/20 to-transparent",
-    fileUrl: "/src/certificate/b9b2dbb5-ce3a-4975-8e23-153f0a7da48b.jpg"
+    fileUrl: "/public/certificate/b9b2dbb5-ce3a-4975-8e23-153f0a7da48b.jpg"
   },
   { 
     title: "Microsoft Excel with A.I Masterclass", 
     issuer: "SkillCourse", 
     year: "Issued Feb 2026", 
     color: "from-accent/20 to-primary/10",
-    fileUrl: "/src/certificate/Certificate_SC-94C7B5DDC7.png"
+    fileUrl: "/public/certificate/Certificate_SC-94C7B5DDC7.png"
   },
   { 
     title: "Python Coding Challenge 4.0", 
     issuer: "IITM Paradox'25", 
     year: "Issued July 2025", 
     color: "from-primary/20 to-transparent",
-    fileUrl: "/src/certificate/PRDX.IIT Madras.pdf"
+    fileUrl: "/public/certificate/PRDX.IIT Madras.pdf"
   },
   { 
     title: "Python Coder", 
     issuer: "Kaggle", 
     year: "Issued Nov 2025", 
     color: "from-accent/20 to-transparent",
-    fileUrl: "/src/certificate/Python Coder.png"
+    fileUrl: "/public/certificate/Python Coder.png"
   },
   { 
     title: "Google Developer Ranchi", 
     issuer: "Google", 
     year: "Issued Jan 2026", 
     color: "from-accent/20 to-transparent",
-    fileUrl: "/src/certificate/Certificate_SC-94C7B5DDC7.png"
+    fileUrl: "/public/certificate/Certificate_SC-94C7B5DDC7.png"
   },
   { 
     title: "Chess Championship", 
     issuer: "IITM Paradox'25", 
     year: "Issued July 2025", 
     color: "from-accent/20 to-transparent",
-    fileUrl: "/src/certificate/PRDX.IIT Madras.pdf"
+    fileUrl: "/public/certificate/PRDX.IIT Madras.pdf"
   },
 ];
 
