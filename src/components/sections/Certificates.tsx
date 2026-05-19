@@ -8,14 +8,14 @@ const certs = [
     issuer: "Cognitive Class", 
     year: "Issued Oct 2025", 
     color: "from-primary/20 to-transparent",
-    fileUrl: "/certificates/python-data-science.pdf" // ← Apni file ka path yaha dale (PDF ya Image)
+    fileUrl: "/src/certificate/1770091044089.jpeg" // ← Apni file ka path yaha dale (PDF ya Image)
   },
   { 
     title: "Gemini Certified Educator", 
     issuer: "Google", 
     year: "Issued Oct 2025", 
     color: "from-accent/20 to-transparent",
-    fileUrl: "/src/assets/profile.png" 
+    fileUrl: "/src/certificate/1770090902323.jpeg"
   },
   { 
     title: "Foundation level in Data science", 
@@ -50,7 +50,7 @@ const certs = [
     issuer: "Kaggle", 
     year: "Issued Nov 2025", 
     color: "from-accent/20 to-transparent",
-    fileUrl: "/certificates/kaggle-python.pdf"
+    fileUrl: "/src/certificate/Python Coder.png"
   },
   { 
     title: "Google Developer Ranchi", 
@@ -64,7 +64,7 @@ const certs = [
     issuer: "IITM Paradox'25", 
     year: "Issued July 2025", 
     color: "from-accent/20 to-transparent",
-    fileUrl: "/certificates/chess-champ.pdf"
+    fileUrl: "/src/certificate/PRDX.IIT Madras.pdf"
   },
 ];
 
