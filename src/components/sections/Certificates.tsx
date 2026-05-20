@@ -86,7 +86,7 @@ export const Certificates = () => {
         >
           <div className="font-mono text-xs tracking-[0.3em] text-primary mb-4">/ 06 — CERTIFICATES</div>
           <h2 className="font-display text-4xl md:text-6xl font-semibold">
-            Always <span className="gradient-text">learning.</span>
+            Always <span className="text-white">learning.</span>
           </h2>
         </motion.div>
 

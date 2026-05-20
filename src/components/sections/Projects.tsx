@@ -5,7 +5,7 @@ const projects = [
   {
     title: "KisanSevaPlus",
     description: "Built a platform to help farmers rent tractors, hire skilled labor, and access agricultural equipment — reducing effort from days to hours.",
-    tech: ["React", "Three.js", "Tailwind"],
+    tech: ["React.js", "Next.js", "Tailwind", "TypeScript", "supabase", "JavaScript", "vite", "Shadcn UI", "Vercel"],
     accent: "from-primary/30 to-transparent",
     live: "https://kisansevaplus.vercel.app",
     github: "https://github.com/Arvindkumar7738600",
@@ -13,7 +13,7 @@ const projects = [
   {
     title: "Jharkhand Tourism",
     description: "Discover the natural beauty and cultural heritage of Jharkhand's most captivating locations & Choose from our premium fleet of well-maintained vehicles for a comfortable and memorable journey across Jharkhand.",
-    tech: ["Html", "Css", "TailwindCSS", "React", "TypeScript"],
+    tech: ["Html", "Css", "TailwindCSS", "React.js", "Next.js", "Tailwind", "TypeScript", "supabase", "JavaScript", "vite", "Shadcn UI", "Vercel"],
     accent: "from-accent/30 to-transparent",
     live: "https://jharkhand-tourism-delta.vercel.app",
     github: "https://github.com/Arvindkumar7738600",
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Mohit Dental Care",
     description: "Vector cartography platform with elegant typography and quiet, performant interactions at scale.",
-    tech: ["Next.js", "Mapbox", "PostgreSQL"],
+    tech: ["React.js", "Next.js", "Tailwind", "TypeScript", "supabase", "JavaScript", "vite", "Shadcn UI", "Vercel", "WhatsApp API","PostgreSQL"],
     accent: "from-primary/30 to-accent/20",
     live: "https://mohitdentalcare.vercel.app",
     github: "https://github.com/Arvindkumar7738600",
@@ -42,10 +42,10 @@ export const Projects = () => {
           <div>
             <div className="font-mono text-xs tracking-[0.3em] text-primary mb-4">/ 04 — SELECTED WORK</div>
             <h2 className="font-display text-4xl md:text-6xl font-semibold">
-              Start-Up , <span className="gradient-text">Projects.</span>
+              Start-Up , <span className="text-white">Projects.</span>
             </h2>
           </div>
-          <p className="text-muted-foreground max-w-sm">
+          <p className="text-muted-foreground  text-yellow-300 max-w-sm">
             Each project is an experiment in motion, geometry, and the quiet details that make interfaces feel alive.
           </p>
         </motion.div>
@@ -86,7 +86,7 @@ export const Projects = () => {
                   href={p.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm text-foreground hover:text-primary transition-colors"
+                  className="inline-flex items-center gap-1.5 text-sm text-lime-300 text-foreground hover:text-primary transition-colors"
                 >
                   <ExternalLink className="w-3.5 h-3.5" /> Live
                 </a>
@@ -94,7 +94,7 @@ export const Projects = () => {
                   href={p.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="inline-flex items-center gap-1.5 text-purple-400 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Github className="w-3.5 h-3.5" /> Code
                 </a>

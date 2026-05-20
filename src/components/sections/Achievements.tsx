@@ -4,7 +4,7 @@ import { Trophy, Medal, Award, Star } from "lucide-react";
 const items = [
   { icon: Trophy, title: "Smart India Hackathon - Runner up", detail: "National finalist among top 30 teams solving real govt. problem statements.", color: "text-accent" },
   { icon: Medal, title: "CSSDA Winner", detail: "Innovation in 3D Web", color: "text-primary" },
-  { icon: Award, title: "Hackathon", detail: "Hack2skill'25 — 1st Place", color: "text-accent" },
+  { icon: Award, title: "Hackathon", detail: "Hack2skill'25 — Runner Up", color: "text-accent" },
   { icon: Star, title: " Open Source Contributor  Gssoc 2026", detail: "Active contributor to React, Vite, and developer tooling ecosystems.", color: "text-primary" },
 ];
 
