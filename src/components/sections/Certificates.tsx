@@ -64,7 +64,7 @@ const certs = [
     issuer: "IITM Paradox'25", 
     year: "Issued July 2025", 
     color: "from-accent/20 to-transparent",
-    fileUrl: "/certificate/PRDX.IIT Madras.pdf"
+    fileUrl: ""
   },
 ];
 
