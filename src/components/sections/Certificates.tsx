@@ -57,7 +57,7 @@ const certs = [
     issuer: "Google", 
     year: "Issued Jan 2026", 
     color: "from-accent/20 to-transparent",
-    fileUrl: "/certificate/Certificate_SC-94C7B5DDC7.png"
+    fileUrl: "/certificate/e66c8e7b-9a1c-4d0b-9f1e-5a3c8b2f8d9a.jpg"
   },
   { 
     title: "Chess Championship", 
